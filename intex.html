@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swiggy foods&craceris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+        list-style-type: none;
+        display: inline;
+        font-size: 17px;
+        }
+        ul{
+        margin-top: 25px;
+        word-spacing: 60px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+            font-size:large;
+        }
+        
+         #lg{
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            transition: 3s
+        }
+        #lg:hover{
+           transform: scale(1.2);
+        }
+        li:hover{
+            color: orangered;
+        }
+        
+        #ot{
+            margin-top: 20px;
+           
+        }
+        #ot:hover{
+            color: orangered;
+        }
+        h3{
+            margin-top: 20px;
+            padding-left: 30px;
+        }
+        img{
+            border-radius: 20px;
+        }
+         .ft{
+            display: flex;
+            justify-content:space-around;
+            margin-top: 20px;
+            }
+       
+        .ht{
+            display: flex;
+            justify-content:space-evenly;
+            margin-top: 20px;
+        }
+        button{
+            border-radius: 10PX;
+            border-color: rgb(216, 222, 223);
+        }
+        select{
+            border-radius: 10px;
+            border-color: rgb(210, 217, 218);
+        }
+        .pp{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+      .pa{
+        display: flex;
+        justify-content:space-evenly ;
+      }
+      .pc{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pd{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pe{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pf{
+        display: flex;
+        justify-content: space-evenly;
+
+      }
+      .pg{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .ph{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pi{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pj{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pk{
+        display: flex;
+        justify-content:space-evenly;
+      }
+      .pl{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pm{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pn{
+        margin-top:10px ;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pz{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pq{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pr{
+          margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .ps{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pv{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .a{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+        padding: 10px;
+        border: 1px solid;
+        border-color: navajowhite;
+        border-radius: 5px;
+        box-sizing: inherit;
+      }
+      .wa{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .wp{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .wc{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .wd{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .we{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+.c1:hover{
+    transform: scale(0.9);
+}
+.wf{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.wg{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.wh{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.zz{
+    padding: 30px 15px;
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+.google{
+   display: flex;
+    gap: 20px;
+}
+.gp{
+    margin-top: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    padding:3px;
+    width: 180px;
+    height: 50px;
+    cursor:pointer;
+}
+#ar{
+    float: left;
+    margin-top: 10px;
+}
+#ak{
+    float:left ;
+    margin-top: 10px;
+}
+.swiggy{
+    display: flex;
+    justify-content: space-evenly;
+}
+#sy{
+    float:left;
+}
+.c{
+    color: rgb(110, 110, 108);
+}
+.dis{
+    display: inline;
+}
+#move{
+    position: relative;
+    margin-top: 35px;
+}
+#right{
+    position: relative;
+    left: 5px;
+    top: 15px;
+    color: orangered;
+}
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+
+}
+.cit{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to top,red,yellow);
+}
+.last{
+    display: flex;
+    justify-content: space-evenly;
+}
+#search{
+    padding: 10px 5px;
+}
+.bl{
+    cursor: not-allowed;
+}
+.na{
+    cursor: pointer;
+}
+.no{
+    cursor: text;
+}
+body{
+    background-color: darkseagreen;
+}
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="na" id="lg"  src="img/swiggy.jpg" alt="" width="30px" height="30px">
+       <a href="others.html"><h4 class="na" id="ot"> <ins>Others</ins></h4></a> 
+    <nav>
+        <ul class="na">
+            <li><i class="fa-solid fa-bag-shopping"></i>Swiggy_Corparate</li>
+            <a href="search.html"><li><i class="fa-brands fa-searchengin"></i>Search</li></a>
+            <li><i class="fa-solid fa-percent"></i>Offers<sup>New</sup></li>
+            <li><i class="fa-solid fa-handshake-angle"></i>Help</li>
+            <a href="signin.html"><li><i class="fa-solid fa-person"></i>Sign_In</li></a>
+            <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+        </ul>
+    </nav>    
+</div>
+</nav>
+  <h3>What,s on your mind?</h3>
+<div class="ft">
+    <div>
+    <a href="Biriyani.html"><img class="na" src="img/plate-biryani-with-bunch-spices-it.jpg" alt="" width="100px" height="100px"></a>
+    <h5>plate_biryani</h5>
+    </div>
+    <div>
+        <a href="pizza.html"><img class="na" src="img/pizza.jpg" alt="" width="100px" height="100px"></a>
+        <h5>spicy_Pizzas</h5>
+    </div>
+    <div>
+       <a href="cakes.html"><img class="na" src="img/blackforest.jpg" alt="" width="100px" height="100px"></a>
+        <h5>Blackforest</h5>
+    </div>
+    <div>
+        <a href="fishmeal.html"><img class="na" src="img/top-view-delicious-fish-meal.jpg" alt="" width="100px" height="100px"></a>
+        <h5>fish_meal</h5>
+    </div>
+    <div>
+        <a href="Noodles.htmlb"><img class="na" src="img/noodle-with-chicken.jpg" alt="" width="100px" height="100px"></a>
+        <h5>noodle-chicken</h5>
+    </div>
+</div>
+<br>
+<hr>
+<h3>Top Restaurant chanis in chhindwara</h3>
+<div class="ht">
+    <div class="c1">
+        <img class="na" src="img/side-view-belgian-waffle-with-chocolate-top-table.jpg" alt="" width="200px" height="200px">
+        <h4>The_Belgian_Waffle_Co.</h4>
+        <a href=""><i class="fa-regular fa-star fa-flip" style="color: #087710;"></i>4.6  .45-50mins</a>
+        <p>Waffle, Desserts, Ice Cream,<br> Beverages Mohan Nagar</p>
+    </div>
+    <div class="c1">
+        <img class="na" src="img/plate-biryani-with-bunch-spices-it.jpg" alt="" width="200px" height="200px">
+        <h4>Adil_Hotel</h4>
+         <a href=""><i class="fa-regular fa-star fa-flip" style="color: #087710;"></i>4.4  .30-36mins</a>
+        <p>Biryani, Tandoor Chhindwara <br> Locality</p>
+    </div>
+    <div class="c1">
+        <img class="na" src="img/blackforest.jpg" alt="" width="200px" height="200px">
+        <h4>Bakery_World</h4>
+          <a href=""><i class="fa-regular fa-star fa-flip" style="color: #087710;"></i>4.4 .30-36mins</a>
+         <p> Bakery, Ice Cream, Snacks, <br> Beverages Parasia Road</p>
+    </div>
+    <div class="c1">
+       <img class="na" src="img/big-sandwich-hamburger.jpg" alt="" width="200px" height="200px">
+       <h4>big_sandwich_hamburger</h4>
+         <a href=""><i class="fa-regular fa-star fa-flip" style="color: #087710;"></i>4.4 .40-45mins</a>
+        <p>Chinese, Fast Food,<br> BeveragesMohan Nagar</p>
+</div>
+</div>
+<br>
+<hr>
+<h3>Restaurants with online food delivery in Chhindwara</h3>
+
+<button>Filter</button>
+<select name="" id="">
+    <option>Short by</option>
+    <option>Relevence</option>
+    <option>Delivery Time</option>
+    <option>Rateing</option>
+    <option>Cost:Low to High</option>
+    <option>Cost:High to Low</option>
+    </select>
+    <button>Fast delivery</button>
+    <button>Rating 4.0+</button>
+    <button>Pure Veg</button>
+    <button>Offers</button>
+    <button>RS.300-RS.600</button>
+    <BUtton>Less then RS.300</BUtton>
+    <button id="search">Search for Restaurant and food <i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="pp">
+    <div class="c1">
+        <img class="na" src="img/pizza.jpg" alt="" width="200px" height="200px">
+        <h4>Pizza Hut</h4>
+        <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.0 .30-40mins</a>
+        <p>Pizzas Chhindwara City</p>
+    </div>
+    <div class="c1">
+        <img class="na" src="img/vegetable-soup.jpg" alt="" width="200px" height="200px">
+        <h4>vegetable soup</h4>
+         <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .25-35mins</a>
+         <p>Bakery,soup, Snacks, Beverages <br>VIP Road</p>
+    </div>
+    <div class="c1">
+        <img class="na" src="img/biriyani.jpg" alt="" width="200px" height="200px">
+        <h4>Veg biriyani</h4>
+        <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .20-35mins</a>
+        <p>North Indian, South Indian, <br> Chinese, Beverages, Fast Food, <br>Desserts Chhindwara Locality</p>
+    </div>
+    <div class="c1">
+        <img class="na" src="img/delicious-pakistan-meal.jpg" alt="" width="200px" height="200px">
+        <h4>delicious_pakistan-meal</h4>
+         <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.3 .30-35mins</a>
+        <p>North Indian, South Indian, <br>Chinese, Beverages, Fast Food,<br> Desserts Chhindwara Locality</p>
+        
+    </div>
+    </div>
+    <div class="pa">
+        <div class="c1">
+            <img class="na" src="img/melting-ice-cream-with-berries.jpg" alt="" width="200px" height="200px">
+            <h4>melting-ice-cream-with-berries</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.8 .20-30mins</a>
+            <p>Ice Cream, Desserts, <br>Beverages Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/grilled-sandwich.jpg" alt="" width="200px" height="200px">
+            <h4>grilled-sandwich</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .30-35mins</a>
+             <p>grilled-sandwich, Indian, <br>Beverages Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/noodle-with-chicken.jpg" alt="" width="200px" height="200px">
+            <h4>delicious-epic-nodules</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.9 .36-45mins</a>
+            <p>Ice Cream, Desserts, Beverages <br>Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/melted-cheese-burger.jpg" alt="" width="200px" height="200px">
+            <h4>melted-cheese-burger</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .30-40mins</a>
+             <p>Beverages, Street Food,<br> Snacks, Pastas, Fast Food,<br> Burgers, Cafe Chhindwara City</p>
+        </div>
+    </div>
+    <div class="pc">
+        <div class="c1">
+            <img class="na" src="img/blackforest.jpg" alt="" width="200px" height="200px">
+            <h4>Blackforest</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .30-40mins</a>
+            <p>Bakery, Ice Cream, Snacks,<br> Beverages Parasia Road</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/shawarma-with-fried-potatoes.jpg" alt="" width="200px" height="200px">
+            <h4>shawarma-with-fried-potatoes</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.1 .40-47mins</a>
+            <p>Fast food,Burgers <br> Cafe Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/traditional-asian-dumplings.jpg" alt="" width="200px" height="200px">
+            <h4>traditional- <br>asian-dumplings</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.3 .32-37mins</a>
+             <p>traditional-asian-dumplings <br> chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/world-cuisine-with-delicious-food.jpg" alt="" width="200px" height="200px">
+            <h4>world-cuisine-with-delicious-food</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.7 .30-47mins</a>
+            <p>Indian, Chinese <br>Chhindwara Locality</p>
+        </div>
+    </div>
+    <div class="pd">
+        <div class="c1">
+            <img class="na" src="img/pexels-ash-craig.jpg" alt="" width="200px" height="200px">
+            <h4>pancake with <br>slicedstarwberry</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .40-47mins</a>
+            <p>Chinese, Beverages, Snacks,<br> Pizzas, Fast Food, <br>Burgers Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-barfisch.jpg" alt="" width="200px" height="200px">
+            <h4>Fried sweet potato</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .20-27mins</a>
+            <p>Fast Food, Street Food,<br> Beverages Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-bemistermister.jpg" alt="" width="200px" height="200px">
+            <h4>delicious meal</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.8 .40-47mins</a>
+             <p>Biryani, Tandoor, French,<br> Snacks, Pizzas, Pastas, <br>Fast Food, Burgers, <br>Cafe Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-chanwalrus.jpg" alt="" width="200px" height="200px">
+            <h4>South Indian cuisine</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.8 .40-45mins</a>
+            <p>South Indian <br>Chhindwara Locality</p>
+        </div>
+    </div>
+    <div class="pe">
+        <div class="c1">
+            <img class="na" src="img/pexels-enginakyurt.jpg" alt="" width="200px" height="200px">
+            <h4>penne pasta <br> with sauce</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.4.30-35mins</a>
+            <p>Snacks, Beverages,<br> Desserts Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-fotios-photos.jpg" alt="" width="200px" height="200px">
+            <h4>Asian cuisine menu&spices</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .30-45mins</a>
+            <p>South Indian, Chinese,<br> Beverages, Fast Food, <br>Desserts Railway Station</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-janetrangdoan.jpg" alt="" width="200px" height="200px">
+            <h4>Strawperries-janetrangdoan</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.7 .30-35mins</a>
+             <p>Strawperries_Desserts,<br> Beverages Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-julieaagaard.jpg" alt="" width="200px" height="200px">
+            <h4>Strawperries-janetrangdoan</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .33-38mins</a>
+            <p>Fast Food, Burgers, <br>Cafe Chhindwara City</p>
+        </div>
+    </div> 
+    <div class="pf">
+        <div class="c1">
+            <img class="na" src="img/pexels-nerfee-mirandilla.jpg" alt="" width="200pz" height="200px">
+            <h4>Grilled Barbecue</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.4 .40-45mins</a>
+            <p>South Indian, Chinese,<br> Beverages, Fast Food,<br> Desserts Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-pixabay.jpg" alt="" width="200px" height="200px">
+            <h4>Grapes N Ice Cream</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .30-35mins</a>
+            <p>Chinese,Snacks,Pizzas,<br> Fast Food, Burgers <br> Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="na" src="img/pexels-saveurssecretes.jpg" alt="" width="200px" height="200px">
+            <h4>AL Beak Food Corner</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .43-48mins</a>
+             <p>North Indian, Biryani,<br> Tandoor Mohan Nagar</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/pexels-suju.jpg" alt="" width="200px" height="200px">
+            <h4>Creamy Affairs</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.8 .33-35mins</a>
+            <p>Bakery, Ice Cream, <br>Beverages Polo Groud</p>
+        </div>
+    </div>
+    <div class="pg">
+        <div class="c1">
+            <img src="img/casserole-with-sauces.jpg" alt="" width="200px" height="200px">
+            <h4>Shreenath Paao Bhaji & Ice</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .35-45mins</a>
+            <p>Fast Food, Beverages <br> Satkar Chowk</p>
+        </div>
+        <div class="c1">
+            <img src="img/chicken-with-cucumber-lemon-seasoning.jpg" alt="" width="200px" height="200px">
+            <h4>AL Beak Food Corner</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.4 .30-35mins</a>
+             <p>North Indian, Biryani,<br> Tandoor Mohan Nagar</p>
+        </div>
+        <div class="c1">
+            <img src="img/cup-coffee.jpg" alt="" width="200px" height="200px">
+            <h4>The Woods Cafe</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .15-25mins</a>
+            <p>Chaat, Fast Food,<br> Beverages Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/daniela-elena-tentis.jpg" alt="" width="200px" height="200px">
+            <h4>Chatori Food Junction</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .30-35mins</a>
+             <p>South Indian, Snacks,<br> Pizzas, Burgers <br> Parasia Road</p>
+        </div>
+    </div>
+    <div class="ph">
+        <div class="c1">
+            <img class="bl" src="img/chicken-kebab.jpg" alt="" width="200px" height="200px">
+            <h4>Radhvi Restaurant And Cafe</h4>
+            <a href="">40-45mins</a>
+            <p>Chinese, South Indian,<br> chicken-kebab, North Indian <br>Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/chicken-skewers-with-slices-sweet-peppers-dill.jpg" alt="" width="200px" height="200px">
+            <h4>Hotel Faiz</h4>
+             <a href="">35-45mins</a>
+             <p>Indian Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/close-up-delicious-asian-food.jpg" alt="" width="200px" height="200px">
+            <h4>Myfit Meals - Meal Prep Co.</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.6 .30-35mins</a>
+            <p>Continental,<br> Salads Chhindwara</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/delicious-epic-nodules.jpg" alt="" width="200px" height="200px">
+            <h4>Radhvi Restaurant And Cafe</h4>
+              <a href="">30-35mins</a>
+              <p>Chinese, South Indian,<br> Pizzas, North Indian <br> Chhindwara City</p>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="c1">
+            <img class="bl" src="img/orange-juice-cocktail.jpg" alt="" width="200px" height="200px">
+            <h4>Shree Naivedyam</h4>
+            <a href="">20-25mins</a>
+            <p>North Indian <br>Nagpur road</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/trainleader.jpg" alt="" width="200px" height="200px">
+            <h4>food of indians</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .30-35mins</a>
+             <p>Chinese, Beverages <br>Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/pexels-goumbik.jpg" alt="" width="200px" height="200px">
+            <h4>Bharat Mewad Ice Cream</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.5 .30-35mins</a>
+            <p>Ice Cream, Desserts,<br> Beverages Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/salad-spicy-thai-food.jpg" alt="" width="200px" height="200px">
+            <h4>Spice Station</h4>
+            <a href="">30-35mins</a>
+            <p>North Indian <br>Chhindwara City</p>
+        </div>
+    </div>
+    <div class="pj">
+        <div class="c1">
+            <img class="bl" src="img/abhinavcoca.jpg" alt="" width="200px" height="200px">
+            <h4>Creamy Affairs</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.3 .30-35mins</a>
+            <p>Bakery, Ice Cream,<br> Beverages Polo Groud</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/brigitte-tohm.jpg" alt="" width="200px" height="200px">
+            <h4>The Belgian Waffle Co.</h4>
+              <a href="">35-40mins</a>
+              <p>Waffle, Desserts, Ice Cream,<br> Beverages Mohan Nagar</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/daniela-elena-tentis (2).jpg" alt="" width="200px" height="200px">
+            <h4>Tadka Restaurat</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.2 .35-45mins</a>
+             <p>Indian, Chinese <br>Chhindwara Locality</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/foodie-factor.jpg" alt="" width="200px" height="200px">
+            <h4>AL Beak Food Corner</h4>
+             <a href="">30-40mins</a>
+             <p>North Indian, Biryani,<br> Tandoor Mohan Nagar</p>
+        </div>
+    </div>
+    <div class="pk">
+        <div class="c1">
+            <img class="bl" src="img/tijana-drndarski.jpg" alt="" width="200px" height="200px">
+            <h4>The kitchen Story</h4>
+             <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.4 .25-30mins</a>
+             <p>Beverages, Street Food,<br> Snacks, Pastas, Fast Food,<br> Burgers, Cafe Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/pexels-valeriya.jpg" alt="" width="200px" height="200px">
+            <h4>Chinese Restaurant Shri</h4>
+              <a href="">30-40mins</a> 
+              <p>Chinese, Italian, Snacks,<br> Fast Food Chhindwara City</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/pixabay.jpg" alt="" width="200px" height="200px">
+            <h4>Chatori Food Junction</h4>
+             <a href="">30-35mins</a>
+             <p>South Indian, Snacks,<br> Pizzas, Burgers Parasia Road</p>
+        </div>
+        <div class="c1">
+            <img class="bl" src="img/pexels-vojtech-okenka.jpg" alt="" width="200px" height="200px">
+            <h4>Feelin'Shawarma</h4>
+            <a href=""><i class="fa-regular fa-star fa-flip" style="color: #0fa328;"></i>4.4 .25-30mins</a>
+            <p>Fast Food, Street Food,<br> Beverages Chhindwara City</p>
+        </div>
+    </div>
+    <h3>Best Places to Eat Across Cities</h3>
+    <div class="pl">
+        <div class="a">
+            Best Restaurants In <br> Bangaloru
+        </div>
+        <div class="a">
+             Best Restaurants In <br> bune
+        </div>
+        <div class="a">
+             Best Restaurants In <br> Mumbai
+        </div>
+        <div class="a">
+             Best Restaurants In <br> Delhi
+        </div>
+    </div>
+    <div class="pm">
+        <div class="a">
+            Best Restaurants In <br>Hyderabad
+        </div>
+        <div class="a">
+             Best Restaurants In <br> Kolkata
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Chennai
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Chandigarh
+        </div>
+    </div>
+    <div class="pn">
+        <div class="a">
+             Best Restaurants In <br>Ahmedabad
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Jaipur
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Nagpur
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Bhubaneswar
+        </div>
+    </div>
+        <details id="details">
+        <summary>Show more</summary>
+    <div class="pz">
+        <div class="a">
+            Best Restaurants In <br> Kochi
+        </div>
+        <div class="a">
+            Best Restaurants In <br>Surat
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Dehradun
+        </div>
+        <div class="a">
+             Best Restaurants In <br> Ludhiana
+        </div>
+    </div>
+    <div class="pq">
+        <div class="a">
+             Best Restaurants In <br>Patna
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Mangaluru
+        </div>
+        <div class="a c1a">
+             Best Restaurants In <br>Bhopal
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Gurgoan
+        </div>
+    </div>
+    <div class="pr">
+        <div class="a">
+             Best Restaurants In <br> Coimbatore
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Agra
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Noida
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Vijayawada
+        </div>
+    </div>
+    <div class="ps">
+        <div class="a">
+             Best Restaurants In <br>Guwahati
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Mysore
+        </div>
+        <div class="a">
+             Best Restaurants In<br>pondicherry
+        </div>
+        <div class="a">
+             Best Restaurants In<br>Thiruvanandha <br>_puram
+        </div>
+    </div>
+    <div class="pv">
+        <div class="a">
+             Best Restaurants In <br>Ranchi
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Vizhag
+        </div>
+        <div class="a">
+             Best Restaurants In <br>Udaipur
+        </div>
+        <div class="a">
+             Best Restaurants In <br> Vododara
+        </div>
+    </div>
+    </details>
+    <h3>Best Cuisines Near Me</h3>
+    <div class="wa">
+        <div class="a">
+            Cwhinese <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            South indian <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Indian <br> Restaurant Near Me
+        </div>
+        <div class="a">
+            Kerala <br>Restaurant Near Me
+        </div>
+    </div>
+    <div class="wp">
+        <div class="a">
+            Korean <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            North indian <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Sea food <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            bengali <br>Restaurant Near Me
+        </div>
+    </div>
+    <div class="wc">
+        <div class="a">
+            Punjabi <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Italian <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Andhra <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Biriyani <br>Restaurant Near Me
+        </div>
+    </div>
+    <details id="detail">
+        <summary>Show more</summary>
+    <div class="wd">
+        <div class="a">
+            Gujarati <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Thai <br> Restaurant Near Me
+        </div>
+        <div class="a">
+            Pizzas <br>Restaurant Near Me
+        </div>
+        <div class="a">
+                Asian <br>Restaurant Near Me
+        </div>
+    </div>
+    <div class="we">
+        <div class="a">
+           Japanese <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Arapian <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Fast food <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Jain <br>Restaurant Near Me
+        </div>
+    </div>
+    <div class="wf">
+    <div class="a">
+           Cafe <br>Restaurant Near Me  
+     </div>
+    <div class="a">
+         Continental <br>Restaurant Near Me
+    </div>
+    <div class="a">
+         Maxican <br>Restaurant Near Me
+    </div>
+    <div class="a">
+         Mughlai <br>Restaurant Near Me
+    </div>
+    </div>
+    <div class="wg">
+        <div class="a">
+           Sushi <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Mangalorean <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Tibetan <br>Restaurant Near Me
+        </div>
+        <div class="a">
+           Barbecue <br>Restaurant Near Me
+        </div>
+    </div>
+    <div class="wh">
+        <div class="a">
+           Maharashtrain <br>Restaurant Near Me 
+        </div>
+        <div class="a">
+            Nepalese <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Rajasthani <br>Restaurant Near Me
+        </div>
+        <div class="a">
+            Trukish <br>Restaurant Near Me
+        </div>
+    </div>
+    </details>
+    <h3>Explore Every Restaurants Near Me</h3>
+    <div class="zz">
+        <div class="a">
+            Explore Restaurants Near <br> Me
+        </div>
+        <div class="a">
+            Explore Top Rated Restaurants  <br>Near Me
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <footer>
+   <div class="google">
+    <div>
+    <h2>For better experience,download the Swiggy app now</h2>
+    </div>
+    <div class="gp">
+        <img id="ar" src="img/google-play.png" alt="" width="40px" height="40px">
+        <p> <small>Get it on</small><br><strong> Google Pay</strong></p>
+    </div>
+    <div class="gp">
+        <img id="ak" src="img/apple-seeklogo.png" alt="" width="40px" height="40px">
+        <P> <small>download on the</small> <br><strong>App Store</strong></P>
+    </div>
+    </div>
+    <div class="swiggy">
+        <div class="dis">
+            <img id="sy" src="img/swiggy.jpg" alt="" width="60px" height="60px">
+            <h2 id="right">swiggy</h2>
+            <p id="move">2025 swiggy limited</p>
+        </div>
+        <div class="na">
+            <h2 class="no">Company</h2>
+            <h4 class="c">About us</h4>
+            <h4 class="c">Swiggy <br>corparate</h4>
+            <h4 class="c">Careers</h4>
+            <h4 class="c">Team</h4>
+            <h4 class="c">Swiggy one</h4>
+            <h4 class="c">Swiggy instamart</h4>
+            <h4 class="c">Swigge dineout</h4>
+        </div>
+        <div class="na">
+            <h2 class="no">Contact us</h2>
+            <h4 class="c">Help&Suport</h4>
+            <h4 class="c">Cpartner with us</h4>
+            <h4 class="c">Ride with us</h4>
+        </div>
+        <div class="na">
+            <h2 class="no">Available in:</h2>
+            <h4 class="c">Bangaloru</h4>
+            <h4 class="c">Gurgoan</h4>
+            <h4 class="c">Hyderbad</h4>
+            <h4 class="c">Delhi</h4>
+            <h4 class="c">mumbai</h4>
+            <h4 class="c">bune</h4>
+        </div>
+        <div class="na">
+            <h2 class="no">Life at swiggy</h2>
+            <h4 class="c">Explore with swiggy </h4>
+            <h4 class="c">Swiggy news</h4>
+            <h4 class="c">Snackables</h4>
+        </div>
+    </div>
+    <div class="link">
+        <div class="na">
+            <h4 class="c">Swiggy genie</h4>
+            <h4 class="c">Minis</h4>
+            <h4 class="c">Pyng</h4>
+        </div>
+        <div class="na">
+            <h2 class="no">Legal</h2>
+            <h4 class="c">Terms& <br>contitions</h4>
+            <h4 class="c">cookie policy</h4>
+            <h4 class="c">Privacy polivy</h4>
+            <h4 class="c">Investore <br>Relations</h4>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <h2 class="no">Social links</h2>
+            <a class="na" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a class="na" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="na" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="na" href=""><i class="fa-brands fa-square-pinterest"></i></a>
+            <a class="na" href=""><i class="fa-brands fa-square-twitter"></i></a>
+
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <h3>Other cities that we deliver:</h3>
+    <div class="last">
+        <div class="na">
+            <h4 class="c">Kolkata</h4>
+            <h4 class="c">Chennai</h4>
+            <h4 class="c">Ahmedabad</h4>
+            <h4 class="c">Chandigarh</h4>
+            <h4 class="c">Jaipur</h4>
+        </div>
+        <div class="na">
+            <h4 class="c">Kochi</h4>
+            <h4 class="c">Coimbatore</h4>
+            <h4 class="c">lucknow</h4>
+            <h4 class="c">Nagpur</h4>
+            <h4 class="c">Vadodara</h4>
+        </div>
+        <div class="na">
+            <h4 class="c">Indore</h4>
+            <h4 class="c">Guwahati</h4>
+            <h4 class="c">Vizhag</h4>
+            <h4 class="c">Surat</h4>
+            <h4 class="c">Noida</h4>
+        </div>
+        <div class="na">
+            <h4 class="c">trichy</h4>
+            <h4 class="c">Vijayawada</h4>
+            <h4 class="c">kanpure</h4>
+            <h4 class="c">Mysore</h4>
+            <h4 class="c">Madurai</h4>
+        </div>
+    </div>
+    </footer>
+    </body>
+    </html>
